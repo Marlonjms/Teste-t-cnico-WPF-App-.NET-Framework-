@@ -6,93 +6,112 @@
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Margin="20" Background="White">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#F5F6FA">
+        <StackPanel Margin="20">
 
             <!-- Título -->
-            <TextBlock Text="Dashboard" FontSize="24" FontWeight="Bold"/>
-            <TextBlock Text="Visão geral do sistema" Margin="0,0,0,20" FontSize="14" Foreground="Gray"/>
+            <TextBlock Text="Dashboard" FontSize="26" FontWeight="Bold" Foreground="#2C3E50"/>
+            <TextBlock Text="Visão geral do sistema" Margin="0,0,0,20" FontSize="14" Foreground="#7F8C8D"/>
 
             <!-- Resumos -->
             <UniformGrid Columns="4" Margin="0,0,0,20" HorizontalAlignment="Stretch">
-                <!-- Pessoas Cadastradas -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Pessoas Cadastradas" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Text="0" FontSize="28" FontWeight="Bold"/>
+                        <TextBlock Text="Pessoas Cadastradas" FontWeight="SemiBold" FontSize="14" Foreground="#2C3E50" Margin="0,0,0,10"/>
+                        <TextBlock Text="0" FontSize="28" FontWeight="Bold" Foreground="#3498DB"/>
                     </StackPanel>
                 </Border>
 
-                <!-- Produtos Cadastrados -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Produtos Cadastrados" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Text="0" FontSize="28" FontWeight="Bold"/>
+                        <TextBlock Text="Produtos Cadastrados" FontWeight="SemiBold" FontSize="14" Foreground="#2C3E50" Margin="0,0,0,10"/>
+                        <TextBlock Text="0" FontSize="28" FontWeight="Bold" Foreground="#3498DB"/>
                     </StackPanel>
                 </Border>
 
-                <!-- Total de Pedidos -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Total de Pedidos" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Text="0" FontSize="28" FontWeight="Bold"/>
+                        <TextBlock Text="Total de Pedidos" FontWeight="SemiBold" FontSize="14" Foreground="#2C3E50" Margin="0,0,0,10"/>
+                        <TextBlock Text="0" FontSize="28" FontWeight="Bold" Foreground="#3498DB"/>
                     </StackPanel>
                 </Border>
 
-                <!-- Valor Total em Vendas -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Valor Total em Vendas" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Text="R$ 0,00" FontSize="28" FontWeight="Bold"/>
+                        <TextBlock Text="Valor Total em Vendas" FontWeight="SemiBold" FontSize="14" Foreground="#2C3E50" Margin="0,0,0,10"/>
+                        <TextBlock Text="R$ 0,00" FontSize="28" FontWeight="Bold" Foreground="#3498DB"/>
                     </StackPanel>
                 </Border>
             </UniformGrid>
 
             <!-- Pedidos -->
             <UniformGrid Columns="2" Margin="0,0,0,20">
-                <!-- Pedidos Pendentes -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="⚠ Pedidos Pendentes" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Text="Quantidade: 0 pedidos" Margin="0,0,0,5"/>
-                        <TextBlock Text="Valor Total: R$ 0,00"/>
+                        <TextBlock Text="⚠ Pedidos Pendentes" FontSize="16" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,10"/>
+                        <TextBlock Text="Quantidade: 0 pedidos" Foreground="#7F8C8D"/>
+                        <TextBlock Text="Valor Total: R$ 0,00" Foreground="#7F8C8D"/>
                     </StackPanel>
                 </Border>
 
-                <!-- Pedidos Pagos -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="✔ Pedidos Pagos" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Text="Quantidade: 0 pedidos" Margin="0,0,0,5"/>
-                        <TextBlock Text="Valor Recebido: R$ 0,00"/>
+                        <TextBlock Text="✔ Pedidos Pagos" FontSize="16" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,10"/>
+                        <TextBlock Text="Quantidade: 0 pedidos" Foreground="#7F8C8D"/>
+                        <TextBlock Text="Valor Recebido: R$ 0,00" Foreground="#7F8C8D"/>
                     </StackPanel>
                 </Border>
             </UniformGrid>
 
             <!-- Ações Rápidas -->
-            <TextBlock Text="Ações Rápidas" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+            <TextBlock Text="Ações Rápidas" FontSize="18" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,10"/>
             <UniformGrid Columns="3">
-                <!-- Cadastrar Pessoa -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Cadastrar Pessoa" FontSize="16" FontWeight="Bold"/>
-                        <TextBlock Text="Adicionar nova pessoa ao sistema" Foreground="Gray"/>
+                        <TextBlock Text="Cadastrar Pessoa" FontSize="16" FontWeight="Bold" Foreground="#3498DB"/>
+                        <TextBlock Text="Adicionar nova pessoa ao sistema" Foreground="#7F8C8D" FontSize="13"/>
                     </StackPanel>
                 </Border>
 
-                <!-- Cadastrar Produto -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Cadastrar Produto" FontSize="16" FontWeight="Bold"/>
-                        <TextBlock Text="Adicionar novo produto ao catálogo" Foreground="Gray"/>
+                        <TextBlock Text="Cadastrar Produto" FontSize="16" FontWeight="Bold" Foreground="#3498DB"/>
+                        <TextBlock Text="Adicionar novo produto ao catálogo" Foreground="#7F8C8D" FontSize="13"/>
                     </StackPanel>
                 </Border>
 
-                <!-- Novo Pedido -->
-                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Padding="15" Margin="5">
+                <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Padding="15" Margin="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#000000" Opacity="0.05" BlurRadius="8"/>
+                    </Border.Effect>
                     <StackPanel>
-                        <TextBlock Text="Novo Pedido" FontSize="16" FontWeight="Bold"/>
-                        <TextBlock Text="Criar pedido para um cliente" Foreground="Gray"/>
+                        <TextBlock Text="Novo Pedido" FontSize="16" FontWeight="Bold" Foreground="#3498DB"/>
+                        <TextBlock Text="Criar pedido para um cliente" Foreground="#7F8C8D" FontSize="13"/>
                     </StackPanel>
                 </Border>
             </UniformGrid>
